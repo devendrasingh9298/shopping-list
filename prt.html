@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script src="script1.js"></script>
+    <h1>Employee Records</h1>
+    <!--input fields -->
+    <input placeholder="Employee_Code" id="emp_code" data-ns-test="emp_code" />
+    <input placeholder="Employee_Name" id="emp_name" data-ns-test="emp_name" />
+    <input placeholder="Salary" id="salary" type="number" data-ns-test="salary" />
+    <button id="button" onclick="insertItem()">Add</button>
+    <br><br><br>
+    <table>
+            <tr>
+                 <th>Sr. No.</th>
+                <th>Employee Code</th>
+                <th>Employee Name</th>
+                <th>Salary</th>
+            </tr>
+            <tbody id="tbody"></tbody>
+    </table>
+    <br><br>
+     <p>Total Price = </p>
+    <div id="total" data-ns-test="grandTotal"></div>
+    
+    <!-- <p data-ns-test="grandtotal">0</p> -->     
+</body>
+</html>
